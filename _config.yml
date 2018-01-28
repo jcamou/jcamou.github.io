@@ -29,6 +29,12 @@ production_url : http://jcamou.github.io
 
 gems: ["jekyll-sitemap"]
 
+# SASS Settings
+#
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :

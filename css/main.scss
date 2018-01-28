@@ -1,0 +1,76 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+/*
+# CSS Styles Contents
+
+@todo Missing the Mixins scss file.
+## TOOLS
+- Mixins...............Useful mixins.
+
+## SETTINGS
+- Global...............Globally-available variables and config.
+- Colors...............Manage our color palette in isolation.
+
+## VENDOR
+- Normalize.css........A level playing field.
+
+## BASE
+- Headings.............H1–H6 styles.
+- Page.................Page-level styles (HTML element).
+- Links................Base link styles.
+- Type.................Base type styles.
+- Lists................Base list styles.
+
+## OBJECTS
+
+
+## COMPONENTS
+
+
+## Helpers
+- Clearfix.............To do clearfix stuff.
+- Spacing..............Space things apart.
+- Positioning..........Position things how you want.
+- Text.................Text helpers.
+
+## Overrides
+- CK-Editor............Overrides for CK-Editor
+
+*/
+
+
+// SETTINGS
+@import "settings.global";
+@import "settings.colors";
+
+
+
+
+// VENDOR
+
+
+
+
+// BASE
+@import "base.page";
+
+
+
+// OBJECTS
+
+
+
+
+// COMPONENTS
+
+
+
+
+
+// HELPERS
+
+
+
+
