@@ -21,10 +21,10 @@
 - Lists................Base list styles.
 
 ## OBJECTS
-
+- Grid.................Grid system for site.
 
 ## COMPONENTS
-
+- Site-nav.............Site logo and navigation.
 
 ## Helpers
 - Clearfix.............To do clearfix stuff.
@@ -46,6 +46,7 @@
 
 
 // VENDOR
+@import "vendor.normalize";
 
 
 
@@ -62,13 +63,20 @@
 
 // COMPONENTS
 @import "components.site-nav";
+@import "components.main-content";
 
 
 
 
 // HELPERS
 @import "helpers.text";
-@import "helpers.clearfix"
+@import "helpers.clearfix";
+@import "helpers.spacing";
+
+
+
+
+
 
 
 
