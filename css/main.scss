@@ -25,6 +25,8 @@
 
 ## COMPONENTS
 - Site-nav.............Site logo and navigation.
+- Main-content.........Main content area of the website excluding nav.
+- Branding.............Main branding component including logo and name. 
 
 ## Helpers
 - Clearfix.............To do clearfix stuff.
@@ -64,6 +66,7 @@
 // COMPONENTS
 @import "components.site-nav";
 @import "components.main-content";
+@import "components.branding";
 
 
 

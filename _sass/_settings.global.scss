@@ -3,12 +3,13 @@
 //\*------------------------------------*/
 
 $border-radius:        2px;
+$nav-bar--height: 60px;
 
 $max-width:            1300px;
 $max-width--content:   700px;
 
 // type
-$font-family:          Georgia, serif;
+$font-family:          Lucida Grande, sans-serif; 
 $font-weight--regular: 300;
 $font-weight--bold:    700;
 
@@ -29,3 +30,5 @@ $transition-animation--background-img:   background-image .15s ease-in-out 0s;
 //\*------------------------------------*/
 
 // $media-query--retina: (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi);
+
+$mq--small: 40rem;
