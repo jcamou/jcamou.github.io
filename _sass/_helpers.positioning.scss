@@ -1,0 +1,59 @@
+///*------------------------------------*\
+//    #POSITIONING
+//\*------------------------------------*
+
+.is-right {
+  float: right;
+}
+
+.is-left {
+  float: left;
+}
+
+.is-readonly {
+  opacity: .45;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.vertical-align--baseline {
+  vertical-align: baseline !important;
+}
+
+.vertical-align--top {
+  vertical-align: top !important;
+}
+
+.position__absolute {
+  position: absolute;
+}
+
+.position__absolute--desktop {
+  position: absolute;
+
+  @media only screen and (max-width: 40rem) {
+    position: initial;
+  }
+}
+
+.position--top-right {
+  top:   0;
+  right: 0;
+}
+
+
+// Horizontal scroll on overvlow
+.overflow-container--horizontal {
+  width:      100%;
+  overflow-x: scroll;
+}
+
+// Ducktape solution for chat
+// To-do: fix the close button on reveal template
+.position--top-right--22 {
+  top:   22px;
+  right: 22px;
+
+}

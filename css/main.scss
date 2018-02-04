@@ -22,11 +22,13 @@
 
 ## OBJECTS
 - Grid.................Grid system for site.
+- Divider..............Styles for dividers around the site.
 
 ## COMPONENTS
 - Site-nav.............Site logo and navigation.
 - Main-content.........Main content area of the website excluding nav.
 - Branding.............Main branding component including logo and name. 
+- Color-palette........Color palette component in work pages. 
 
 ## Helpers
 - Clearfix.............To do clearfix stuff.
@@ -60,6 +62,7 @@
 
 // OBJECTS
 @import "objects.grid";
+@import "objects.divider";
 
 
 
@@ -67,6 +70,7 @@
 @import "components.site-nav";
 @import "components.main-content";
 @import "components.branding";
+@import "components.color-palette";
 
 
 
@@ -75,6 +79,7 @@
 @import "helpers.text";
 @import "helpers.clearfix";
 @import "helpers.spacing";
+@import "helpers.positioning";
 
 
 
