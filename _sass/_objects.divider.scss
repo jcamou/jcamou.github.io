@@ -3,11 +3,21 @@
 //\*------------------------------------*/
 
 .divider--thick {
-  height: 4px;
-  border: none;
+  height:        4px;
+  border:        none;
   margin-bottom: 2rem;
+}
+
+.divider--med {
+  height:        2px;
+  border:        none;
+  margin-bottom: .875rem;
 }
 
 .divider--blue {
   background-color: $color-blue-med;
+}
+
+.divider--black {
+  background-color: $color-black-base;
 }
