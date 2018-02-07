@@ -1,0 +1,50 @@
+///*------------------------------------*\
+//    #BRANDING
+//\*------------------------------------*/
+
+.branding__container {
+  @extend .group;
+  display: block;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    .branding__logo-container {
+      background-color: $color-blue-med;
+    }
+
+    .branding__text {
+      color: $color-blue-med;
+    }
+  }
+}
+
+.branding__logo-container {
+  width:            60px;
+  height:           60px;
+  border-radius:    50%;
+  // background-color: white;
+  padding:          6px 5px;
+  float:            left;
+  margin-right:     12px;
+  transition:       $transition-animation--background-color;
+}
+
+.branding__logo {
+  background: url('/images/branding__face.svg')no-repeat scroll 50% 0 transparent;
+}
+
+.branding__logo--50 {
+  width:  50px;
+  height: 50px;
+}
+
+.branding__text {
+  text-decoration: none;
+  padding: 6px 0;
+  color:           $color-black-base;
+  transition: $transition-animation--color;
+}
+
+.branding__name {
+  font-weight: $font-weight--bold;
+}

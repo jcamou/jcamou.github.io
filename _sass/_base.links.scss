@@ -1,0 +1,13 @@
+///*------------------------------------*\
+//    #LINKS
+//\*------------------------------------*/
+
+a {
+  text-decoration: none;
+  color:           $color-blue-med;
+  cursor:          pointer;
+
+  &:hover, &:focus {
+    color: $color-blue-dark;
+  }
+}
