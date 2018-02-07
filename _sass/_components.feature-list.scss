@@ -1,0 +1,20 @@
+///*------------------------------------*\
+//    #FEATURE-LIST
+//\*------------------------------------*/
+
+.feature-list__link {
+  @extend .group;
+
+  margin-bottom: 4rem;
+
+  h2 {
+    margin: 0;
+    transition: $transition-animation--color;
+  }
+
+  &:hover, &:focus {
+    h2 {
+      color: $color-blue-med;
+    }
+  }
+}
