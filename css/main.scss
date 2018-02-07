@@ -23,6 +23,9 @@
 ## OBJECTS
 - Grid.................Grid system for site.
 - Divider..............Styles for dividers around the site.
+- Basic-lists..........Generic basic lists with configurable settings.
+- Buttons..............Styles for all buttons and action links.
+- Captions.............Captions for images, figures, etc.
 
 ## COMPONENTS
 - Site-nav.............Site logo and navigation.
@@ -57,12 +60,17 @@
 
 // BASE
 @import "base.page";
+@import "base.links";
+@import "base.type";
 
 
 
 // OBJECTS
 @import "objects.grid";
 @import "objects.divider";
+@import "objects.basic-list";
+@import "objects.buttons";
+@import "objects.captions";
 
 
 

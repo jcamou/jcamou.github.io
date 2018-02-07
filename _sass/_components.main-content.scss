@@ -4,15 +4,14 @@
 
 .main-content__container {
   margin-left:      300px;
-  height:           100vh;
+  height:           100%;
   background-color: white;
-  padding:          4rem $spacing-unit--large;
+  padding:          4rem 0;
   // border: 1px solid $color-gray-med;
 
   @media only screen and (max-width: $mq--small) {
     margin-left: 0;
     margin-top: 0;
-    padding: $spacing-unit;
   }
 
   h1 {

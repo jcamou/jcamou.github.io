@@ -1,0 +1,15 @@
+///*------------------------------------*\
+//    #CAPTIONS
+//\*------------------------------------*/
+
+.caption__container {
+  direction: block;
+  font-size: 12px;
+}
+
+.caption__label {
+  border-top:    2px solid $color-gray-med;
+  margin-bottom: 4px;
+  padding-top:   2px;
+  font-weight:   $font-weight--bold;
+}
