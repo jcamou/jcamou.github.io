@@ -1,0 +1,48 @@
+///*------------------------------------*\
+//    #BORDERED-PANEL
+//\*------------------------------------*/
+
+.bordered-panel {
+  position:         relative;
+  background-color: $color-gray-light;
+  padding:          $spacing-unit;
+  border-top:       2px solid;
+
+  &.bordered-panel--clickable {
+    cursor: pointer;
+    transition: $transition-animation;
+
+    &:hover, &:focus {
+      background-color: darken($color-gray-light, 5%);
+    }
+  }
+
+  &.bordered-panel__background--white {
+    background-color: white;
+  }
+
+}
+
+.bordered-panel--gray {
+  border-color: $color-gray-med;
+}
+
+.bordered-panel--blue {
+  border-color: $color-blue-med;
+}
+
+.bordered-panel--yellow {
+  border-color: $color-yellow-base;
+}
+
+.bordered-panel--green {
+  border-color: $color-green-base;
+}
+
+.bordered-panel--red {
+  border-color: $color-red-base;
+}
+
+.bordered-panel__set-height--150 {
+  height: 150px;
+}
