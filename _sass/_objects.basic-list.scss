@@ -14,7 +14,7 @@
 
 .basic-list--thin-dividers {
   >li {
-    // border-bottom: $border--thin;
+    border-bottom: $border--thin;
 
     &:last-of-type {
       border-bottom: none;
