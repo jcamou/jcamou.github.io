@@ -9,7 +9,7 @@ $max-width:            1300px;
 $max-width--content:   700px;
 
 // type
-$font-family:          Lucida Grande, sans-serif; 
+$font-family:          Lucida Grande, Verdana, sans-serif; 
 $font-weight--regular: 300;
 $font-weight--bold:    700;
 
@@ -24,6 +24,10 @@ $transition-animation:                   all .29s ease-in-out 0s;
 $transition-animation--color:            color .15s ease-in-out 0s;
 $transition-animation--background-color: background-color .29s ease-in-out 0s;
 $transition-animation--background-img:   background-image .15s ease-in-out 0s;
+
+// Borders
+$border--light:   2px solid $color-gray-med;
+$border--thin:    1px solid $color-gray-med;
 
 ///*------------------------------------*\
 //    #MEDIA QUERIES
