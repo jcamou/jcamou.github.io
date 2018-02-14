@@ -6,6 +6,7 @@ a {
   text-decoration: none;
   color:           $color-blue-med;
   cursor:          pointer;
+  transition:      $transition-animation--color;
 
   &:hover, &:focus {
     color: $color-blue-dark;

@@ -16,6 +16,11 @@
       color: $color-blue-med;
     }
   }
+
+  @media only screen and (max-width: $mq--small) {
+    width: 75%;
+    float: left;
+  }
 }
 
 .branding__logo-container {
@@ -40,9 +45,9 @@
 
 .branding__text {
   text-decoration: none;
-  padding: 6px 0;
+  padding:         6px 0;
   color:           $color-black-base;
-  transition: $transition-animation--color;
+  transition:      $transition-animation--color;
 }
 
 .branding__name {
