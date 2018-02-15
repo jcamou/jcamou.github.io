@@ -26,7 +26,7 @@
 .site-nav__list {
   list-style-type: none;
   margin-top:      8rem;
-  padding-left:     72px;
+  padding-left:     0;
 
   @media only screen and (max-width: $mq--small) {
     height:              calc(100vh - 90px);
@@ -50,20 +50,37 @@
 }
 
 .site-nav__item {
+  @extend .group;
+
   line-height:   1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 .site-nav__link {
+  @extend .group;
+
+  display:         block;
+  width:           100%;
+  height:          100%;
   color:           $color-black-base;
   text-decoration: none;
   transition:      $transition-animation--color;
   cursor:          pointer;
   font-weight:     $font-weight--bold;
   font-size:       14px;
+  line-height:     30px;
 
   &:hover, &:focus {
     color: $color-blue-med;
+    background-color: $color-gray-light;
+
+    .site-nav__icon--work {
+      background-image: url('/assets/images/icons/nav-icons__work--color.svg');
+    }
+
+    .site-nav__icon--articles {
+      background-image: url('/assets/images/icons/nav-icons__articles--color.svg');
+    }
   }
 
   @media only screen and (max-width: $mq--small) {
@@ -103,4 +120,21 @@
   @media only screen and (min-width: $mq--small) {
     display: none;
   }
+}
+
+.site-nav__icon {
+  margin-right: 12px;
+  width:        60px;
+  height:       34px;
+  float:        left;
+  transition:   $transition-animation--background-img;
+  will-change:  background-image;
+}
+
+.site-nav__icon--work {
+   background: url('/assets/images/icons/nav-icons__work--bw.svg')no-repeat scroll 50% 0 transparent;
+}
+
+.site-nav__icon--articles {
+   background: url('/assets/images/icons/nav-icons__articles--bw.svg')no-repeat scroll 50% 0 transparent;
 }
