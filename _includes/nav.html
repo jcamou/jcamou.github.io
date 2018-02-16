@@ -1,25 +1,24 @@
-<div class='site-nav__container grid__container-padding spacing__pad-top--4'>
-  <nav role='navigation'>
+<nav role="navigation" class='site-nav__container grid__container-padding '>
 
-    {% include branding.html %}
+  {% include branding.html %}
+
+  <a href="#trigger:nav" role="Toggle Navigation Menu" class="site-nav__open js-site-nav__toggle">Menu</a>
+  
+  <ul class='site-nav__list js-site-nav__list'>
+    <li class='site-nav__item'>
+      <a href='/work/' class='site-nav__link'>
+        <div class="site-nav__icon--work site-nav__icon"></div>
+        <span>Recent Work</span>
+      </a>
+    </li>
+    <li class='site-nav__item'>
+      <a href='/articles/' class='site-nav__link'>
+        <div class="site-nav__icon--articles site-nav__icon"></div>
+        <span>Articles</span>
+      </a>
+    </li>
+  </ul>
     
-<!--     <ul class='site-nav__list'>
-      <li class='site-nav__item'><a href='/work/' class='site-nav__link'>Recent Work</a></li>
-      <li class='site-nav__item'><a href='/contact/' class='site-nav__link'>Articles</a></li>
-      <li class='site-nav__item'><a href='/contact/' class='site-nav__link'>Contact</a></li>
-    </ul>
-   -->
-    
-  </nav>
-</div>
+</nav>
 
-<div class='site-nav__container--mobile'>
-  <a href='{{site.baseurl}}/'> 
-    <div class="branding__logo-container">
-      <div class="branding__logo branding__logo--50"></div>
-    </div>
-  </a>
-<!-- 
-  <div class='is-right'><a href='#' class='site-nav__link'>Menu</a></div> -->
 
-</div>

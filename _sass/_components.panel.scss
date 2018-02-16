@@ -1,0 +1,91 @@
+///*------------------------------------*\
+//    #PANEL
+//\*------------------------------------*/
+
+.panel {
+  position:            relative;
+  display:             -ms-flexbox;
+  display:             flex;
+  overflow:            hidden;
+  min-height:          320px;
+  width:               100%;
+  padding-top:         40px;
+  padding-bottom: 20px;
+  -webkit-box-shadow:  -4px 4px 0px 0px rgba(245,245,246,1);
+  -moz-box-shadow:     -4px 4px 0px 0px rgba(245,245,246,1);
+  box-shadow:          -4px 4px 0px 0px rgba(245,245,246,1);
+  transition-property: box-shadow;
+  transition-duration: .25s;
+  will-change:         box-shadow;
+
+  &:hover, &:focus {
+    // box-shadow: none;
+    -webkit-box-shadow:  0px 0px 0px 1px rgba(70, 70, 70, 1);
+    -moz-box-shadow:     0px 0px 0px 1px rgba(70, 70, 70, 1);
+    box-shadow:          0px 0px 0px 1px rgba(70, 70, 70, 1);
+
+  }
+
+}
+
+.panel__text {
+  margin-left:       40px;
+  margin-right:      40px;
+  -ms-flex-positive: 0;
+  flex-grow:         0;
+  -ms-flex-negative: 0;
+  flex-shrink:       0;
+  width:             40%;
+
+  @media only screen and (max-width: $mq--small) {
+    width: 100%;
+    margin-left: $spacing-unit;
+    margin-right: $spacing-unit;
+  }
+}
+
+.panel__img-container {
+  height:              100%;
+  -ms-flex-item-align: end;
+  align-self:          flex-end;
+  position:            relative;
+  width:               60%;
+
+  @media only screen and (max-width: $mq--small) {
+    width: 100%;
+  }
+}
+
+.panel--pink {
+  background-color: $color-pink-base;
+}
+
+.panel--blue {
+  background-color: $color-blue-med;
+}
+
+.panel--purple {
+  background-color: $color-purple-base;
+}
+
+
+.panel__work-type {
+  font-size: 10px;
+  font-weight: $font-weight--bold;
+  color: white;
+}
+
+.panel__heading {
+  margin-top:    6px;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  color:         white;
+  font-weight:   $font-weight--bold;
+  border-bottom: 2px solid white;
+}
+
+.panel__description {
+  color: white;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
