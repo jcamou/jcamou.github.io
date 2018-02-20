@@ -8,13 +8,19 @@
   text-decoration: none;
 
   &:hover, &:focus {
-    .branding__logo-container {
-      background-color: $color-blue-med;
+    // background-color: $color-gray-light;
+    .branding__logo {
+      background-image:url('/assets/images/branding/logo__color.svg');
     }
 
     .branding__text {
       color: $color-blue-med;
     }
+  }
+
+  @media only screen and (max-width: $mq--small) {
+    width: 75%;
+    float: left;
   }
 }
 
@@ -30,7 +36,9 @@
 }
 
 .branding__logo {
-  background: url('/images/branding__face.svg')no-repeat scroll 50% 0 transparent;
+  background: url('/assets/images/branding/logo__bw.svg')no-repeat scroll 50% 0 transparent;
+  transition:   $transition-animation--background-img;
+  will-change:  background-image;
 }
 
 .branding__logo--50 {
@@ -40,9 +48,9 @@
 
 .branding__text {
   text-decoration: none;
-  padding: 6px 0;
+  padding:         6px 0;
   color:           $color-black-base;
-  transition: $transition-animation--color;
+  transition:      $transition-animation--color;
 }
 
 .branding__name {
