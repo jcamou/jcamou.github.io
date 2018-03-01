@@ -5,8 +5,9 @@
 $border-radius:   2px;
 $nav-bar--height: 60px;
 
-$max-width:            1300px;
-$max-width--content:   700px;
+$max-width:          1200px;
+$max-width--content: 700px;
+$site-nav--width:    250px;
 
 // type
 $font-family:          Lucida Grande, Verdana, sans-serif; 
@@ -35,4 +36,4 @@ $border--thin:    1px solid $color-gray-med;
 
 // $media-query--retina: (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi);
 
-$mq--small: 40rem;
+$mq--small: 700px;
