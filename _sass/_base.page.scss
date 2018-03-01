@@ -17,8 +17,12 @@ html {
 }
 
 body {
-  height:           100vh;
+  height:              100vh;
+  margin-left:         $site-nav--width;
   // background-color: $color-gray-light;
+  @media only screen and (max-width: $mq--small) {
+    margin-left: 0;
+  }
   
 }
 

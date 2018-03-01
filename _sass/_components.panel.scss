@@ -10,7 +10,7 @@
   min-height:          320px;
   width:               100%;
   padding-top:         40px;
-  padding-bottom: 20px;
+  padding-bottom:      20px;
   -webkit-box-shadow:  -4px 4px 0px 0px rgba(245,245,246,1);
   -moz-box-shadow:     -4px 4px 0px 0px rgba(245,245,246,1);
   box-shadow:          -4px 4px 0px 0px rgba(245,245,246,1);
@@ -66,6 +66,10 @@
 
 .panel--purple {
   background-color: $color-purple-base;
+}
+
+.panel--green {
+  background-color: $color-green-base;
 }
 
 
