@@ -9,7 +9,7 @@
   border-top:       2px solid;
 
   &.bordered-panel--clickable {
-    cursor: pointer;
+    cursor:     pointer;
     transition: $transition-animation;
 
     &:hover, &:focus {

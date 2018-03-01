@@ -5,11 +5,14 @@
 .site-nav__container {
   @extend .group;
 
-  position:    fixed;
-  height:      100vh;
-  width:       25%;
-  max-width:   300px;
-  padding-top: 4rem;
+  position:         fixed;
+  height:           100vh;
+  width:            $site-nav--width;
+  padding-top:      4rem;
+  bottom:           0;
+  top:              0;
+  left:             0;
+  background-color: $color-gray-light;
 
   @media only screen and (max-width: $mq--small) {
     position:       relative;
@@ -53,7 +56,11 @@
   @extend .group;
 
   line-height:   1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: $mq--small) {
+    margin-bottom: 0;
+  }
 }
 
 .site-nav__link {
@@ -69,6 +76,7 @@
   font-weight:     $font-weight--bold;
   font-size:       14px;
   line-height:     30px;
+  text-align:      center;
 
   &:hover, &:focus {
     color: $color-blue-med;
@@ -86,14 +94,12 @@
   @media only screen and (max-width: $mq--small) {
     height:          25%;
     width:           100%;
-    display:         -ms-flexbox;
-    display:         flex;
-    -ms-flex-pack:   center;
+    padding:         2rem 0 1rem;
     justify-content: center;
     -ms-flex-align:  center;
     align-items:     center;
     font-size:       18px;
-    line-height:     4em;
+    line-height:     3rem;
     border-bottom:   1px dashed $color-gray-med;
 
 
@@ -123,12 +129,12 @@
 }
 
 .site-nav__icon {
-  margin-right: 12px;
-  width:        60px;
-  height:       34px;
-  float:        left;
-  transition:   $transition-animation--background-img;
-  will-change:  background-image;
+  margin:      auto;
+  width:       auto;
+  height:      40px;
+  // float:    left;
+  transition:  $transition-animation--background-img;
+  will-change: background-image;
 }
 
 .site-nav__icon--work {

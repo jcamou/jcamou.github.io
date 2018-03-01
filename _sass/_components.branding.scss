@@ -4,7 +4,8 @@
 
 .branding__container {
   @extend .group;
-  display: block;
+
+  display:         block;
   text-decoration: none;
 
   &:hover, &:focus {
@@ -25,15 +26,20 @@
 }
 
 .branding__logo-container {
-  width:            60px;
-  height:           60px;
-  border-radius:    50%;
-  // background-color: white;
-  padding:          6px 5px;
-  float:            left;
-  margin-right:     12px;
-  transition:       $transition-animation--background-color;
+  margin:              auto;
+  width:               60px;
+  height:              60px;
+  border-radius:       50%;
+  padding:             6px 5px;
+  // float:            left;
+  transition:          $transition-animation--background-color;
+
+  @media only screen and (max-width: $mq--small) {
+    float:        left;
+    margin-right: 8px;
+  }
 }
+
 
 .branding__logo {
   background: url('/assets/images/branding/logo__bw.svg')no-repeat scroll 50% 0 transparent;
@@ -50,7 +56,12 @@
   text-decoration: none;
   padding:         6px 0;
   color:           $color-black-base;
+  text-align:      center;
   transition:      $transition-animation--color;
+
+  @media only screen and (max-width: $mq--small) {
+    text-align: left;
+  }
 }
 
 .branding__name {
