@@ -36,6 +36,7 @@
 - Feature-lists........Featured work styles.
 - Bordered-panel.......Styles for notifications or panels. 
 - Panel................Styles for colored panels. 
+- Speech-bubble........Style for speech bubble in home page.
 
 ## Helpers
 - Clearfix.............To do clearfix stuff.
@@ -87,6 +88,7 @@
 @import "components.feature-list";
 @import "components.bordered-panel";
 @import "components.panel";
+@import "components.speech-bubble";
 
 
 

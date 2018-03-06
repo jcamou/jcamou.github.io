@@ -6,6 +6,15 @@ figure {
   margin: 0;
 }
 
+.figures__bg-circle--gray {
+  background-color: $color-gray-light;
+  border-radius:    50%;
+}
+
 .figures__work-logo {
   width: 60px;
+}
+
+.figures__width--75 {
+  width: 75px;
 }
