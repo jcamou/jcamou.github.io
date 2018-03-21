@@ -3,58 +3,102 @@ layout: default
 title: testing title
 ---
 
-<div class="grid__container spacing__margin-bottom--4">
-  <div class="grid__col--3of4 grid__container--centered grid__container-padding grid__mobile--full-width">
-    <div class="speech-bubble speech-bubble--pink spacing__margin-bottom--2">
-      <div class="text__font-size--24 text--bold">I am José Camou, a UX designer and front-end developer currently living in Clearwater, Florida.</div>
+<div class="grid__container grid__container-padding spacing__margin-bottom--4">
+  
+  <div class="panel panel__main panel--blue">
+    <div class="grid__col--1of4 grid__mobile--full-width">
+      <figure class="grid__container--centered figures__width--100 spacing__margin-bottom--2">
+        <img src="/assets/images/poz/poz__face--white.svg" alt="cartoon avatar">
+      </figure>
+    </div>
+    <div class="grid__col--3of4 grid__mobile--full-width">
+      <p class="text__font-size--18 text--bold text__color--white">Hello! I am José Camou, a UX designer and front-end developer currently living in Clearwater, Florida. I enjoy building things and telling stories with design.</p>
+      <p class="text__font-size--14 text__color--white">I was previously working at a small company called Sixth Edge, leading design and UX on Educational Technology web apps. I received a B.S. in Computer Science and a M.S. in Human-Computer Interaction.</p>
+      <p class="text__font-size--14 text__color--white spacing__margin-bottom--2">I believe that a User-Centered Design approach is key to building great products. I love injecting some emotion into interfaces. Go on and explore the site or shoot me an email!</p>
+      <div class="grid__container spacing__margin-bottom--2">
+        <a href="mailto:jccamou@gmail.com?Subject=Hello" class="spacing__margin-right--1" alt="Email Me" title="Email Me"><div class="icon icon--actionable icon--18 icon__email--white"></div></a>
+        <a href="https://github.com/jcamou" class="spacing__margin-right--1" alt="GitHub" title="Github"><div class="icon icon--actionable icon--18 icon__github--white"></div></a>
+        <a href="https://www.linkedin.com/in/josecarloscamou/" class="spacing__margin-right--1" alt="Linkedin" title="Linkedin"><div class="icon icon--actionable icon--18 icon__linkedin--white"></div></a>
+        <a href="https://twitter.com/Camounster" class="spacing__margin-right--1" alt="Twitter" title="Twitter"><div class="icon icon--actionable icon--18 icon__twitter--white"></div></a>
+        
+      </div>
     </div>
     
-    <figure class="grid__container--centered figures__width--100  spacing__margin-bottom--4">
-      <img src="/assets/images/poz/poz--full-body.svg" alt="cartoon avatar">
-    </figure>
+
+  </div>
 
 
-    <p>I was previously leading design and UX in a small company EdTech shop called <a href="http://sixthedge.com/">Sixth Edge</a>. I received a B.S. in Computer Science and a M.S. in Human-Computer Interaction. </p>
+</div>
 
-    <p class="spacing__margin-bottom--2">Shoot me an email <a href="mailto:jccamou@gmail.com?Subject=Hello">here</a>. You can find my code <a href="https://github.com/jcamou">here</a>.</p>
 
-<!--     <hr class="divider--thick divider--blue">
-    <h1 class="spacing__margin-bottom--0">Recent Work</h1>
-    <p class="spacing__margin-bottom--4">Here's a curated list of some of my work.</p>
-    <ul class="basic-list--no-dots">
-      <li class="basic-list__item spacing__margin-bottom--4">
-        <a href="/work/opentbl" class="feature-list__link">
-          <figure class="figures__work-logo">
-            <img src="assets/images/work/opentbl/otbl_logo_default.svg">
-          </figure>
-          <h2 class="text__color--black">
-              OpenTBL
-          </h2>
-          <p class="text__color--black">OpenTBL is a learning platform designed specifically for Team-based Learning (TBL).</p>
-        </a>
-      </li>
+<div class="grid__container grid__container-padding spacing__margin-bottom--4">
+  <div class="grid__container">
+    <div class="grid__col--3of4  grid__mobile--full-width is-right">
+      <h2>Featured Case Studies</h2>
+    </div>
+  </div>
+  <div class="grid__container grid__container--flex flex__justify--between">
+    <div class="grid__col--48 spacing__margin-bottom--1 grid__mobile--full-width">
+      <a href="/work/opentbl" class=" panel panel--hover panel--pink">
+        <div class="grid__container grid__container-padding">
+          <div class="panel__work-type">Case Study</div>
+          <h3 class="panel__heading">OpenTBL</h3>
+          <p class="panel__description">An EdTech web app that is designed to promote effective teaching through technology using the team-based learning pedagogy.</p>
+          <div class="text__font-size--14 text--bold text__color--white">Read More <div class="icon icon--16 icon__arrow--white icon__arrow--right spacing__margin-left--half"></div></div>
+        </div>
+      </a>
+    </div>
+    <div class="grid__col--48 spacing__margin-bottom--1 grid__mobile--full-width">
+      <a href="/work/cirtl" class=" panel panel--hover panel--purple">
+        <div class="grid__container grid__container-padding">
+          <div class="panel__work-type">Case Study</div>
+          <h3 class="panel__heading">CIRTL Network</h3>
+          <p class="panel__description">Resources, learning communities, events, and courses for current and future STEM faculty commited to advancing evidence-based practices.</p>
+          <div class="text__font-size--14 text--bold text__color--white">Read More
+          <div class="icon icon--16 icon__arrow--white icon__arrow--right spacing__margin-left--half"></div>
+          </div>
+        </div>
+      </a>
+    </div>
 
-      <li class="basic-list__item spacing__margin-bottom--4">
-        <a href="/work/cirtl" class="feature-list__link">
-          <figure class="figures__work-logo">
-            <img src="assets/images/work/cirtl/cirtl_logo.png">
-          </figure>
-          <h2 class="text__color--black">
-              CIRTL Network
-          </h2>
-          <p class="text__color--black">A platform that provides a place to share resources, create learning communities, and offer courses to current and future STEM faculty committed to advancing evidence-based teaching practices.</p>
-        </a>
-      </li>
+  </div>
 
-      <li class="basic-list__item spacing__margin-bottom--4">
-        <a href="/work/urban-forecast" class="feature-list__link">
-          <h2 class="text__color--black">
-              Urban Forecast
-          </h2>
-          <p class="text__color--black">A crisis management mobile app designed to help people post a crisis event on a map to warn others.</p>
-        </a>
-      </li>
+</div>
 
-    </ul> -->
+<div class="grid__container grid__container-padding spacing__margin-bottom--4">
+  <div class="grid__container">
+    <div class="grid__col--3of4 grid__mobile--full-width is-right spacing__margin-bottom--2">
+      <h2>Presentations</h2>
+
+      <ul class="basic-list--no-dots basic-list--thick-dividers">
+        <li class="basic-list__item">
+          <div class="text__font-size--14">ThinkSpace - An Open-Source Platform for TBL Online and Blended Learning Spaces</div>
+          <div class="text__font-size--12 text--bold spacing__margin-bottom--1">Team-Based Learning Collaborative, 2016</div>
+        </li>
+        <li class="basic-list__item">
+          <div class="text__font-size--14">Turning Educational Research Projects Into Sustainable Web Applications</div>
+          <div class="text__font-size--12 text--bold">Open Apereo, 2014</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="grid__container grid__container-padding spacing__margin-bottom--4">
+  <div class="grid__container">
+    <div class="grid__col--3of4 grid__mobile--full-width is-right spacing__margin-bottom--2">
+      <h2>Publications</h2>
+
+      <ul class="basic-list--no-dots basic-list--thick-dividers">
+        <li class="basic-list__item">
+          <div class="text__font-size--14">Urban Forecast: An Analysis of a Crowdsourced Mobile App for Crisis Management</div>
+          <div class="text__font-size--12 text--bold spacing__margin-bottom--1">Masters Thesis, 2013</div>
+        </li>
+        <li class="basic-list__item">
+          <div class="text__font-size--14">Designing for Cultural Connections</div>
+          <div class="text__font-size--12 text--bold spacing__margin-bottom--1">Communications in Computer and Information Science, 2011</div>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
