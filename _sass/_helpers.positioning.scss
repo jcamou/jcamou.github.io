@@ -6,6 +6,12 @@
   float: right;
 }
 
+.is-reset--mobile {
+  @media only screen and (max-width: $mq--small) {
+    float: initial;
+  }
+}
+
 .is-left {
   float: left;
 }

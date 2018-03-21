@@ -24,7 +24,7 @@
 
 .basic-list--thick-dividers {
   >li {
-    // border-bottom: $border--light;
+    border-bottom: 2px solid $color-blue-med;
 
     &:last-of-type {
       border-bottom: none;
