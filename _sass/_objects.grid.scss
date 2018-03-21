@@ -43,7 +43,7 @@
 .grid__col--primary {
   padding-right: 1rem;
 
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: $mq--small) {
     padding-right: 0;
   }
 }
@@ -103,13 +103,13 @@
 }
 
 .grid__mobile--full-width {
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: $mq--small) {
    width: 100%;
   }
 }
 
 .grid__mobile--overlay {
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: $mq--small) {
     position:         fixed;
     background-color: rgba(255, 255, 255, .75);
     top:              0;
@@ -121,7 +121,7 @@
 }
 
 .grid__mobile-col--1of2 {
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: $mq--small) {
     width: 50% !important;
   }
 }

@@ -1,0 +1,131 @@
+///*------------------------------------*\
+//    #ICONS
+//\*------------------------------------*/
+
+.icon {
+ display:           inline-block;
+ vertical-align:    middle;
+ background-repeat: no-repeat;
+ background-size: contain;
+}
+
+.icon--actionable {
+  cursor: pointer;
+  transition: $transition-animation--background-img;
+  &:focus {
+    outline:        1px dotted $color-blue-base;
+    outline-offset: 4px;
+  }
+}
+
+/**
+ * Icon Sizes
+ */
+
+.icon--16 {
+  width:  16px;
+  height: 16px;
+}
+
+.icon--18 {
+  width:  18px;
+  height: 18px;
+}
+
+.icon--24 {
+  width:  24px;
+  height: 24px;
+}
+
+.icon--32 {
+  width:  32px;
+  height: 32px;
+}
+
+.icon--36 {
+  width:  36px;
+  height: 36px;
+}
+
+.icon--42 {
+  width:  42px;
+  height: 42px;
+}
+
+.icon--64 {
+  width:  64px;
+  height: 64px;
+}
+
+
+/**
+ * Icons
+ */
+
+
+// Arrow
+
+.icon__arrow--white {
+  background-image: url('/assets/images/icons/icons_arrow-up--white.svg');
+
+  &.icon__arrow--right {
+    transform: rotate(90deg);
+  }
+
+  &.icon__arrow--left {
+    transform: rotate(-90deg);
+  }
+
+  &.icon__arrow--down {
+    transform: rotate(180deg);
+  }
+}
+
+
+
+
+// Social
+
+.icon__email--white {
+  background-image: url('/assets/images/icons/icons__social--email.svg');
+  height: 12px;
+
+  &.icon--actionable {
+    &:hover, &:focus {
+      
+     
+    }
+  }
+}
+
+.icon__github--white {
+  background-image: url('/assets/images/icons/icons__social--github.svg');
+
+  &.icon--actionable {
+    &:hover, &:focus {
+      
+    }
+  }
+}
+
+.icon__linkedin--white {
+  background-image: url('/assets/images/icons/icons__social--linkedin.svg');
+
+  &.icon--actionable {
+    &:hover, &:focus {
+      
+    }
+  }
+}
+
+.icon__twitter--white {
+  background-image: url('/assets/images/icons/icons__social--twitter.svg');
+  height: 14px;
+
+  &.icon--actionable {
+    &:hover, &:focus {
+      
+    }
+  }
+}
+
