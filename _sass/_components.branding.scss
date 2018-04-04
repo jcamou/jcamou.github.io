@@ -6,10 +6,10 @@
   @extend .group;
 
   display:         block;
+  float:           left;
   text-decoration: none;
 
   &:hover, &:focus {
-    // background-color: $color-gray-light;
     .branding__logo {
       background-image:url('/assets/images/branding/logo__color.svg');
     }
@@ -26,13 +26,14 @@
 }
 
 .branding__logo-container {
-  margin:              auto;
-  width:               60px;
-  height:              60px;
-  border-radius:       50%;
-  padding:             6px 5px;
-  // float:            left;
-  transition:          $transition-animation--background-color;
+  margin:        auto;
+  width:         60px;
+  height:        60px;
+  border-radius: 50%;
+  padding:       6px 5px;
+  float:         left;
+  margin-right:  8px;
+  transition:    $transition-animation--background-color;
 
   @media only screen and (max-width: $mq--small) {
     float:        left;
@@ -53,10 +54,11 @@
 }
 
 .branding__text {
+  display:         inline-block;
   text-decoration: none;
-  padding:         6px 0;
+  padding:         8px 0;
   color:           $color-black-base;
-  text-align:      center;
+  text-align:      left;
   transition:      $transition-animation--color;
 
   @media only screen and (max-width: $mq--small) {

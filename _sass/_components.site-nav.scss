@@ -5,22 +5,28 @@
 .site-nav__container {
   @extend .group;
 
-  position:         fixed;
-  height:           100vh;
-  width:            $site-nav--width;
-  padding-top:      4rem;
-  bottom:           0;
-  top:              0;
-  left:             0;
-  background-color: $color-gray-light;
+  position:            relative;
+  height:              auto;
+  width:               100%;
+  max-width:           $max-width;
+  margin:              0 auto;
+  padding-top:         1rem;
+  padding-bottom:      1rem;
+  padding:             1rem $spacing-unit--large;
+  top:                 0;
+  left:                0;
+
+
 
   @media only screen and (max-width: $mq--small) {
-    position:       relative;
-    width:          100%;
-    max-width:      none;
-    height:         auto;
-    padding-top:    1rem;
-    padding-bottom: 1rem;
+    position:         relative;
+    width:            100%;
+    max-width:        none;
+    height:           auto;
+    padding:          1rem $spacing-unit--large 1rem $spacing-unit;
+    padding-top:      1rem;
+    padding-bottom:   1rem;
+    background-color: $color-gray-light;
   }
 
 }
@@ -28,7 +34,7 @@
 
 .site-nav__list {
   list-style-type: none;
-  margin-top:      8rem;
+  float: right;
   padding-left:     0;
 
   @media only screen and (max-width: $mq--small) {
@@ -55,11 +61,14 @@
 .site-nav__item {
   @extend .group;
 
-  line-height:   1.5rem;
-  margin-bottom: 2rem;
+  line-height:      1.5rem;
+  display:          inline-block;
+  margin-left:      2rem;
 
   @media only screen and (max-width: $mq--small) {
+    display:       block;
     margin-bottom: 0;
+    margin-left:   0;
   }
 }
 
@@ -76,11 +85,9 @@
   font-weight:     $font-weight--bold;
   font-size:       14px;
   line-height:     30px;
-  text-align:      center;
 
   &:hover, &:focus {
     color: $color-blue-med;
-    background-color: $color-gray-light;
 
     .site-nav__icon--work {
       background-image: url('/assets/images/icons/nav-icons__work--color.svg');
@@ -94,6 +101,7 @@
   @media only screen and (max-width: $mq--small) {
     height:          25%;
     width:           100%;
+    text-align:      center;
     padding:         2rem 0 1rem;
     justify-content: center;
     -ms-flex-align:  center;
@@ -107,11 +115,11 @@
 }
 
 .site-nav__open {
-  font-size:   14px;
-  float:       right;
-  line-height: $nav-bar--height;
-  font-weight: $font-weight--bold;
-  color:       $color-black-base;
+  font-size:      14px;
+  float:          right;
+  line-height:    $nav-bar--height;
+  font-weight:    $font-weight--bold;
+  color:          $color-black-base;
   vertical-align: middle;
 
   &:before {
@@ -132,15 +140,24 @@
   margin:      auto;
   width:       auto;
   height:      40px;
-  // float:    left;
   transition:  $transition-animation--background-img;
   will-change: background-image;
 }
 
 .site-nav__icon--work {
-   background: url('/assets/images/icons/nav-icons__work--bw.svg')no-repeat scroll 50% 0 transparent;
+  display:    none;
+  background: url('/assets/images/icons/nav-icons__work--bw.svg')no-repeat scroll 50% 0 transparent;
+
+  @media only screen and (max-width: $mq--small) {
+    display: block;
+  }
 }
 
 .site-nav__icon--articles {
-   background: url('/assets/images/icons/nav-icons__articles--bw.svg')no-repeat scroll 50% 0 transparent;
+  display:    none;
+  background: url('/assets/images/icons/nav-icons__articles--bw.svg')no-repeat scroll 50% 0 transparent;
+
+   @media only screen and (max-width: $mq--small) {
+     display: block;
+   }
 }
