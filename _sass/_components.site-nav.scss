@@ -2,19 +2,20 @@
 //    #SITE-NAV
 //\*------------------------------------*/
 
-.site-nav__container {
+// Local Variables
+$nav-bar--height: 44px;
+
+.site-bar__container {
   @extend .group;
 
-  position:            relative;
-  height:              auto;
-  width:               100%;
-  max-width:           $max-width;
-  margin:              0 auto;
-  padding-top:         1rem;
-  padding-bottom:      1rem;
-  padding:             1rem $spacing-unit--large;
-  top:                 0;
-  left:                0;
+  position:         relative;
+  height:           auto;
+  width:            100%;
+  max-width:        $max-width;
+  margin:           0 auto;
+  margin-top:       2rem;
+  top:              0;
+  left:             0;
 
 
 
@@ -31,39 +32,29 @@
 
 }
 
+.site-bar--nav {
+  background-color: $color__black--base;
+}
+
+.site-bar--footer {
+  background-color: $color__gray--med;
+  color: $color__black--base;
+}
+
+
 
 .site-nav__list {
   list-style-type: none;
-  float: right;
-  padding-left:     0;
+  padding-left:    0;
+  margin:          0;
+  float:           right;
 
-  @media only screen and (max-width: $mq--small) {
-    height:              calc(100vh - 90px);
-    width:               100%;
-    position:            absolute;
-    padding:             0 $spacing-unit 0; 
-    background-color:    $color-gray-light;
-    border-top:          1px solid $color-gray-med;
-    margin:              0;
-    top:                 -100vh;
-    left:                0;
-    z-index:             3;
-    transition-property: top;
-    transition-duration: .25s;
-    will-change:         top;
-
-    &.is-open {
-      top: 90px;
-    }
-  }
 }
 
-.site-nav__item {
+.site-bar__item {
   @extend .group;
-
-  line-height:      1.5rem;
+  
   display:          inline-block;
-  margin-left:      2rem;
 
   @media only screen and (max-width: $mq--small) {
     display:       block;
@@ -72,30 +63,56 @@
   }
 }
 
-.site-nav__link {
+.site-bar__item--logo {
+  float:            left;
+  width:            $nav-bar--height + 2px;
+  height:           $nav-bar--height;
+  border-right:     3px solid white;
+  color:            white;
+  background-color: $color__black--base;
+  cursor:           pointer;
+  transition:       $transition-animation--background-color;
+
+  
+
+}
+
+.site-bar--nav .site-bar__item--logo {
+  color:            white;
+  background-color: $color__black--base;
+
+  &:hover, &:focus {
+    background-color: $color__green--base;
+  }
+}
+
+.site-bar--footer .site-bar__item--logo {
+  color:            $color__black--base;
+  background-color: $color__gray--med;
+
+  &:hover, &:focus {
+    background-color: $color__green--base;
+  }
+}
+
+.site-bar__link {
   @extend .group;
 
   display:         block;
+  font-family:     $font-family--ui;
   width:           100%;
   height:          100%;
-  color:           $color-black-base;
+  line-height:     $nav-bar--height - 2px;
   text-decoration: none;
   transition:      $transition-animation--color;
+  padding-left:    1rem;
+  padding-right:   1rem;
   cursor:          pointer;
-  font-weight:     $font-weight--bold;
-  font-size:       14px;
-  line-height:     30px;
+  font-size:       12px;
+
 
   &:hover, &:focus {
-    color: $color-blue-med;
-
-    .site-nav__icon--work {
-      background-image: url('/assets/images/icons/nav-icons__work--color.svg');
-    }
-
-    .site-nav__icon--articles {
-      background-image: url('/assets/images/icons/nav-icons__articles--color.svg');
-    }
+    color: $color__blue--base;
   }
 
   @media only screen and (max-width: $mq--small) {
@@ -114,50 +131,21 @@
   }
 }
 
-.site-nav__open {
-  font-size:      14px;
-  float:          right;
-  line-height:    $nav-bar--height;
-  font-weight:    $font-weight--bold;
-  color:          $color-black-base;
-  vertical-align: middle;
-
-  &:before {
-    content:   "☰ ";
-    font-size: 16px;
-  }
-
-  &:hover, &:focus {
-    color: $color-blue-med;
-  }
-
-  @media only screen and (min-width: $mq--small) {
-    display: none;
-  }
+.site-bar--nav .site-bar__link {
+  color: $color__off-white--base;
 }
 
-.site-nav__icon {
-  margin:      auto;
-  width:       auto;
-  height:      40px;
-  transition:  $transition-animation--background-img;
-  will-change: background-image;
+.site-bar--footer .site-bar__link {
+  color: $color__black--base;
 }
 
-.site-nav__icon--work {
-  display:    none;
-  background: url('/assets/images/icons/nav-icons__work--bw.svg')no-repeat scroll 50% 0 transparent;
-
-  @media only screen and (max-width: $mq--small) {
-    display: block;
-  }
-}
-
-.site-nav__icon--articles {
-  display:    none;
-  background: url('/assets/images/icons/nav-icons__articles--bw.svg')no-repeat scroll 50% 0 transparent;
-
-   @media only screen and (max-width: $mq--small) {
-     display: block;
-   }
+.site-bar__copyright {
+  display:       inline;
+  font-family:   $font-family--ui;
+  font-size:     12px;
+  width:         100%;
+  height:        100%;
+  line-height:   $nav-bar--height - 2px;
+  padding-left:  1rem;
+  padding-right: 1rem;
 }

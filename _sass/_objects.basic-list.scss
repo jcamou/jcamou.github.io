@@ -36,7 +36,8 @@
 .basic-list__item {
   @extend .group;
   
-  margin-bottom: 1rem;
+  font-size:     14px;
+  margin-bottom: 4px;
 
   &:last-of-type {
     margin-bottom: 0;

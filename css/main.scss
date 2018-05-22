@@ -38,6 +38,7 @@
 - Panel................Styles for colored panels. 
 - Speech-bubble........Style for speech bubble in home page.
 - Icons................Styles for icons on the site.
+- Meta-container.......Container for meta-data in use cases.
 
 ## Helpers
 - Clearfix.............To do clearfix stuff.
@@ -65,6 +66,7 @@
 
 
 // BASE
+@import "base.headings";
 @import "base.page";
 @import "base.links";
 @import "base.type";
@@ -90,7 +92,7 @@
 @import "components.feature-list";
 @import "components.bordered-panel";
 @import "components.panel";
-@import "components.speech-bubble";
+@import "components.meta-container";
 
 
 

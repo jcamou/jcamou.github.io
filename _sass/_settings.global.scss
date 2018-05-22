@@ -6,13 +6,17 @@ $border-radius:   2px;
 $nav-bar--height: 60px;
 
 $max-width:          1200px;
-$max-width--content: 700px;
+$max-width--content: 500px;
 $site-nav--width:    250px;
 
-// type
-$font-family:          Lucida Grande, Verdana, sans-serif; 
+// Type
+$font-family--body:     'Libre Baskerville', serif;
+$font-family--headings: 'Work Sans', sans-serif;
+$font-family--ui:       'Roboto Mono', monospace;
 $font-weight--regular: 300;
 $font-weight--bold:    700;
+
+$font-family:          Lucida Grande, Verdana, sans-serif; 
 
 // Spacing
 $spacing-unit:        0.9375rem;

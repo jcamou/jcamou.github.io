@@ -5,15 +5,13 @@
 button, 
 .btn {
   display:            inline-block;
-  font-family:        $font-family;
-  font-weight:        $font-weight--bold;
+  font-family:        $font-family--ui;
   font-size:          .75rem;
   text-align:         center;
   vertical-align:     middle;
   text-transform:     capitalize;
-  background-color:   $color-gray-med;
-  color:              $color-black-base;
-  border-radius:      $border-radius;
+  background-color:   $color__gray--med;
+  color:              $color__black--base;
   border:             none;
   cursor:             pointer;
   white-space:        nowrap;
@@ -29,7 +27,7 @@ button,
   will-change:        background-color;
 
   &:hover, &:focus {
-    background-color: darken($color-gray-med, 10%);
+    background-color: darken($color__gray--med, 10%);
     color:            $color-black-base;
 
 
@@ -47,11 +45,11 @@ button,
 }
 
 .btn--primary {
-  background-color: $color-blue-med;
+  background-color: $color__green--base;
   color:            white;
 
   &:hover, &:focus {
-    background-color: darken($color-blue-med, 10%);
+    background-color: darken($color__green--base, 10%);
     color:            white;
   }
   
@@ -61,7 +59,7 @@ button,
   }
   
   &:active {
-    background-color: $color-blue-base;
+    // background-color: $color-blue-base;
   }
 }
 
