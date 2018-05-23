@@ -17,19 +17,6 @@ $site-bar--height: 44px;
   top:              0;
   left:             0;
 
-
-
-  @media only screen and (max-width: $mq--small) {
-    position:         relative;
-    width:            100%;
-    max-width:        none;
-    height:           auto;
-    padding:          1rem $spacing-unit--large 1rem $spacing-unit;
-    padding-top:      1rem;
-    padding-bottom:   1rem;
-    background-color: $color-gray-light;
-  }
-
 }
 
 .site-bar--nav {
@@ -56,11 +43,6 @@ $site-bar--height: 44px;
   
   display:          inline-block;
 
-  @media only screen and (max-width: $mq--small) {
-    display:       block;
-    margin-bottom: 0;
-    margin-left:   0;
-  }
 }
 
 .site-bar__item--logo {
@@ -115,20 +97,6 @@ $site-bar--height: 44px;
     color: $color__blue--base;
   }
 
-  @media only screen and (max-width: $mq--small) {
-    height:          25%;
-    width:           100%;
-    text-align:      center;
-    padding:         2rem 0 1rem;
-    justify-content: center;
-    -ms-flex-align:  center;
-    align-items:     center;
-    font-size:       18px;
-    line-height:     3rem;
-    border-bottom:   1px dashed $color-gray-med;
-
-
-  }
 }
 
 .site-bar--nav .site-bar__link {
