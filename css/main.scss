@@ -26,7 +26,8 @@
 - Basic-lists..........Generic basic lists with configurable settings.
 - Buttons..............Styles for all buttons and action links.
 - Captions.............Captions for images, figures, etc.
-- Figures..............Figures and images. 
+- Figures..............Figures and images.
+- Sections.............Section styles like background color, etc. 
 
 ## COMPONENTS
 - Site-nav.............Site logo and navigation.
@@ -36,9 +37,9 @@
 - Feature-lists........Featured work styles.
 - Bordered-panel.......Styles for notifications or panels. 
 - Panel................Styles for colored panels. 
-- Speech-bubble........Style for speech bubble in home page.
 - Icons................Styles for icons on the site.
 - Meta-container.......Container for meta-data in use cases.
+- Contact..............Styles for contact component on front page.
 
 ## Helpers
 - Clearfix.............To do clearfix stuff.
@@ -81,6 +82,7 @@
 @import "objects.captions";
 @import "objects.figures";
 @import "objects.icons";
+@import "objects.sections";
 
 
 
@@ -93,6 +95,7 @@
 @import "components.bordered-panel";
 @import "components.panel";
 @import "components.meta-container";
+@import "components.contact";
 
 
 

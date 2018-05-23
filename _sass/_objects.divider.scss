@@ -3,7 +3,7 @@
 //\*------------------------------------*/
 
 .divider--thick {
-  height:        4px;
+  height:        3px;
   border:        none;
   margin-bottom: 2rem;
 }
@@ -15,13 +15,13 @@
 }
 
 .divider--blue {
-  background-color: $color-blue-med;
+  background-color: $color__blue--dark;
 }
 
 .divider--black {
-  background-color: $color-black-base;
+  background-color: $color__black--base;
 }
 
 .divider--gray {
-  background-color: $color-gray-light;
+  background-color: $color__gray--light;
 }

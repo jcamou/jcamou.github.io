@@ -49,7 +49,7 @@ button,
   color:            white;
 
   &:hover, &:focus {
-    background-color: darken($color__green--base, 10%);
+    background-color: $color__blue--dark;
     color:            white;
   }
   

@@ -3,7 +3,7 @@
 //\*------------------------------------*/
 
 // Local Variables
-$nav-bar--height: 44px;
+$site-bar--height: 44px;
 
 .site-bar__container {
   @extend .group;
@@ -65,8 +65,8 @@ $nav-bar--height: 44px;
 
 .site-bar__item--logo {
   float:            left;
-  width:            $nav-bar--height + 2px;
-  height:           $nav-bar--height;
+  width:            $site-bar--height + 2px;
+  height:           $site-bar--height;
   border-right:     3px solid white;
   color:            white;
   background-color: $color__black--base;
@@ -102,7 +102,7 @@ $nav-bar--height: 44px;
   font-family:     $font-family--ui;
   width:           100%;
   height:          100%;
-  line-height:     $nav-bar--height - 2px;
+  line-height:     $site-bar--height - 2px;
   text-decoration: none;
   transition:      $transition-animation--color;
   padding-left:    1rem;
@@ -133,10 +133,18 @@ $nav-bar--height: 44px;
 
 .site-bar--nav .site-bar__link {
   color: $color__off-white--base;
+
+  &:hover, &:focus {
+    color: $color__green--base;
+  }
 }
 
 .site-bar--footer .site-bar__link {
   color: $color__black--base;
+  
+  &:hover, &:focus {
+    color: $color__green--base;
+  }
 }
 
 .site-bar__copyright {
@@ -145,7 +153,7 @@ $nav-bar--height: 44px;
   font-size:     12px;
   width:         100%;
   height:        100%;
-  line-height:   $nav-bar--height - 2px;
+  line-height:   $site-bar--height - 2px;
   padding-left:  1rem;
   padding-right: 1rem;
 }

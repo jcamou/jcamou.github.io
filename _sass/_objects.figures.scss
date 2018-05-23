@@ -7,12 +7,14 @@ figure {
 }
 
 .figures__bg-circle--gray {
-  background-color: $color-gray-light;
+  background-color: $color__gray--light;
   border-radius:    50%;
 }
 
-.figures__work-logo {
-  width: 60px;
+.figures__width--60 {
+  width:   60px;
+  height:  60px;
+  padding: 10px;
 }
 
 .figures__width--20 {

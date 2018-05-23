@@ -54,9 +54,10 @@
 
 li+.basic-list__item--separator {
   &:before {
-    content:'•';
-    padding-right:6px;
-    padding-left: 6px
+    content:       '•';
+    padding-right: 6px;
+    padding-left:  6px;
+    color:         $color__gray--med;
   }
 }
 

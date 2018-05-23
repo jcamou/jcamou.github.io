@@ -8,8 +8,16 @@
 }
 
 .caption__label {
-  border-top:    2px solid $color-gray-med;
-  margin-bottom: 4px;
-  padding-top:   2px;
-  font-weight:   $font-weight--bold;
+  float:       left;
+  padding-top: 8px;
+  font-family: $font-family--ui;
+  color:       $color__blue--dark;
+}
+
+.caption__description {
+  font-style:  italic;
+  margin-left: 60px;
+  padding:     8px 0 8px 16px;
+  border-left: 2px solid $color__gray--med;
+  line-height: 1.7em;
 }

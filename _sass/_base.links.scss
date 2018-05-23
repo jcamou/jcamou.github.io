@@ -2,7 +2,8 @@
 //    #LINKS
 //\*------------------------------------*/
 
-p a:not(.btn) {
+p a:not(.btn),
+.contact__text a {
   text-decoration: underline;
   color:           $color__green--base;
   transition:      $transition-animation--color;
@@ -12,3 +13,4 @@ p a:not(.btn) {
     color: $color__blue--dark;
   }
 }
+

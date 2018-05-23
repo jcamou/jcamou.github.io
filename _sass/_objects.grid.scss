@@ -125,3 +125,41 @@
     width: 50% !important;
   }
 }
+
+
+
+///*------------------------------------*\
+//    #GRID v2
+//\*------------------------------------*/
+
+.grid-wrapper {
+  display:               grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap:              20px;
+}
+
+
+.col__1 {
+  grid-column: span 1;
+}
+
+.col__5 {
+  grid-column: span 5;
+}
+
+.col__6 {
+  grid-column: span 6;
+}
+
+.col__6--center {
+  grid-column: col-start 4 / span 6;
+}
+
+.col__7 {
+  grid-column: span 7;
+}
+
+
+.col__12 {
+  grid-column: col-start / span 12;
+}

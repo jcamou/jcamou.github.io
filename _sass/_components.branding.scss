@@ -2,70 +2,20 @@
 //    #BRANDING
 //\*------------------------------------*/
 
-.branding__container {
-  @extend .group;
-
-  display:         block;
-  float:           left;
-  text-decoration: none;
-
-  &:hover, &:focus {
-    .branding__logo {
-      background-image:url('/assets/images/branding/logo__color.svg');
-    }
-
-    .branding__text {
-      color: $color-blue-med;
-    }
-  }
-
-  @media only screen and (max-width: $mq--small) {
-    width: 75%;
-    float: left;
-  }
+.branding__logo--white {
+  background: url('/assets/images/branding/logo__j--white.svg')no-repeat scroll 50% 0 transparent;
 }
 
-.branding__logo-container {
-  margin:        auto;
-  width:         60px;
-  height:        60px;
-  border-radius: 50%;
-  padding:       6px 5px;
-  float:         left;
-  margin-right:  8px;
-  transition:    $transition-animation--background-color;
-
-  @media only screen and (max-width: $mq--small) {
-    float:        left;
-    margin-right: 8px;
-  }
+.branding__logo--black {
+  background: url('/assets/images/branding/logo__j--black.svg')no-repeat scroll 50% 0 transparent;
 }
 
-
-.branding__logo {
-  background: url('/assets/images/branding/logo__bw.svg')no-repeat scroll 50% 0 transparent;
-  transition:   $transition-animation--background-img;
-  will-change:  background-image;
+.branding__logo--22 {
+  height:     22px;
+  margin-top: 10px;
 }
 
 .branding__logo--50 {
   width:  50px;
   height: 50px;
-}
-
-.branding__text {
-  display:         inline-block;
-  text-decoration: none;
-  padding:         8px 0;
-  color:           $color-black-base;
-  text-align:      left;
-  transition:      $transition-animation--color;
-
-  @media only screen and (max-width: $mq--small) {
-    text-align: left;
-  }
-}
-
-.branding__name {
-  font-weight: $font-weight--bold;
 }
