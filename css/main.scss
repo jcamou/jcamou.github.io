@@ -28,6 +28,7 @@
 - Captions.............Captions for images, figures, etc.
 - Figures..............Figures and images.
 - Sections.............Section styles like background color, etc. 
+- Footnotes............Styles for subscript, superscripts and footnotes. 
 
 ## COMPONENTS
 - Site-nav.............Site logo and navigation.
@@ -83,6 +84,7 @@
 @import "objects.figures";
 @import "objects.icons";
 @import "objects.sections";
+@import "objects.footnotes";
 
 
 

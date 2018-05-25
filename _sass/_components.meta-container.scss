@@ -13,10 +13,22 @@
   .btn {
     min-width: 150px;
   }
+
+  @media only screen and (max-width: $mq--small) {
+    display: block;
+
+  }
 }
 
 .meta-container__column {
+  @media only screen and (max-width: $mq--small) {
+    margin-bottom: 2rem;
 
+    &:last-of-type{
+      margin-bottom: 1rem;
+    }
+
+  }
 }
 
 .meta-container__label {

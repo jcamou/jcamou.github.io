@@ -6,18 +6,20 @@ permalink: /work/opentbl
 ---
 
 <div class="grid-wrapper">
-  <div class="col__6--center">
-    <h1 class="spacing__margin-bottom--0">Team-Based Learning Exercise Builder</h1>
+  <div class="col__6--center col-small__10--center">
+    <h1 class="spacing__margin-bottom--0">Designing a Team-Based Learning Exercise Builder</h1>
     <div class="text--ui text__font-sze--14 text__color--blue spacing__margin-bottom--1">OpenTBL</div>
     <hr class="divider--thick divider--gray">
   </div>
 </div>
 
 <div class="grid-wrapper">
-  <div class="col__6--center">
-    <p class="spacing__margin-bottom--2">After adding a <a>Team-based Learning (TBL)</a> feature to ThinkSpace, one of our learning platforms, we noticed an unusual increase in tickets regarding the exercise builder. ThinkSpace housed a variety of discipline-specific tools that could be added to any exercise, so complexity wasn’t unfamiliar to its users. However, given that this tool was the first one to add team functionality to the platform compounded with the number of tickets coming in, we decided to take a closer look at the problem. </p>
+  <div class="col__6--center col-small__10--center">
+    <p class="spacing__margin-bottom--2">According to Vanderbilt’s Center for Teaching, “Team-based learning (TBL) is a structured form of small-group learning that emphasizes student preparation out of class and application of knowledge in class.”<sup><a href="#" rel="footnote">1</a></sup> One common type of TBL exercise is the <em>Peer Evaluation</em> where students evaluate their own teammates’ performance through quantitative and qualitative feedback.</p>
 
-    <p>The result was OpenTBL, a learning platform designed specifically for TBL, containing a simplified exercise builder and support articles.</p>
+    <p>We decided to add Peer Evaluations to <a href="http://www.thinkspace.org/" rel="external">ThinkSpace</a>, one of our learning platforms, to support a number of users who were implementing TBL in their classrooms. After adding the TBL feature, however, we noticed an unusual increase in tickets regarding the exercise builder.</p>
+
+    <p>ThinkSpace houses a variety of discipline-specific tools that can be added to any exercise, so complexity isn’t unfamiliar to its users. So when tickets started pouring in over a relatively simple type of exercise we decided to step back and evaluate the building process within ThinkSpace.</p>
   </div>
 </div>
 
@@ -50,11 +52,12 @@ permalink: /work/opentbl
 </div>
 
 <div class="grid-wrapper">
-  <div class="col__6--center">
+  <div class="col__6--center col-small__10--center">
     <h2 class="spacing__margin-bottom--0">Problem</h2>
     <div class="text--ui text__font-sze--14 text__color--blue spacing__margin-bottom--1">Complexity with little support</div>
-    <p class="spacing__margin-bottom--2">The majority of the problems stemmed from the number of disciplines and learning tools ThinkSpace catered to. This is a strength of the platform when building more complicated exercises, but can be brutal for someone building something as simple as a Peer Evaluation. Too many options, too many steps, and too many opportunities to get lost. </p>
-
+    <p class="spacing__margin-bottom--2">The majority of the problems stemmed from the number of disciplines and learning tools ThinkSpace catered to. This is a strength of the platform when building more complicated exercises, but it can be brutal for someone building something as simple as a Peer Evaluation. Too many options, too many steps, and too many opportunities to get lost. </p>
+    <p>Since team functionality wasn’t baked initially into ThinkSpace, instructors had to manually connect each step of the exercise to the team set they wanted to use through the settings menu. Many instructors who successfully created a TBL exercise completely missed this part of the process. </p>
+    <p>We also had instructors new to TBL that wanted to try using ThinkSpace in their courses. The combination of a complicated building process, little-to-no knowledge on proper TBL pedagogy, and limited support articles to help guide them through proved to be a bad one.</p>
   </div>
 </div>
 
@@ -64,11 +67,25 @@ permalink: /work/opentbl
       <img src="/assets/images/work/opentbl/otbl__space-home--2.png" alt="Photo of course overview">
     </figure>
   </div>
-  <div class="col__6--center">
+  <div class="col__6--center col-small__10--center">
     <div class="caption__container">
       <div class="caption__label">Fig. 1</div>
       <div class="caption__description">Landing page for OpenTBL. We wanted a fun and friendly aesthetic to match the application.</div>
     </div>
+  </div>
+</div>
+
+<div class="grid-wrapper spacing__margin-bottom--4">
+  <div class="col__6--center col-small__10--center">
+    <h2 class="spacing__margin-bottom--0">Problem</h2>
+    <div class="text--ui text__font-sze--14 text__color--blue spacing__margin-bottom--1">Complexity with little support</div>
+    <p class="spacing__margin-bottom--1">Once we identified the problems, we defined a simple set of goals to use as metrics for our new endeavor:</p>
+    <ul class="basic-list">
+      <li class="basic-list__item spacing__margin-bottom--1">Create a TBL specific platform to cater to the growing demand for TBL tools</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Reduce the steps to build a TBL exercise</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Provide pedagogy-supported templates and support tips to help guide new users</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Reduce the number of builder-related tickets</li>
+    </ul>
   </div>
 </div>
 
@@ -83,7 +100,7 @@ permalink: /work/opentbl
       <img src="/assets/images/work/opentbl/otbl__space-home--2.png" alt="Photo of course overview">
     </figure>
   </div>
-  <div class="col__6--center">
+  <div class="col__6--center col-small__10--center">
     <div class="caption__container">
       <div class="caption__label">Fig. 2</div>
       <div class="caption__description">A common TBL exercise is the RAT. Students take a multiple choice test individually and then complete the same test with their team. The goal is to give questions that create discussion amongst the team, so they learn from each other. OpenTBL provides a real-time chat to facilitate those discussions.</div>
@@ -91,8 +108,59 @@ permalink: /work/opentbl
   </div>
 </div>
 
+<div class="grid-wrapper">
+  <div class="col__6--center col-small__10--center">
+    <h2 class="spacing__margin-bottom--0">Approach</h2>
+    <div class="text--ui text__font-sze--14 text__color--blue spacing__margin-bottom--1">Creating OpenTBL</div>
+    <p>To satisfy the first goal we decided to take the existing TBL functionality in ThinkSpace and create OpenTBL, a learning platform designed specifically for Team-Based Learning. We wanted the platform to be supported by the literature as much as possible, so we dove into TBL journal articles and seminal research papers to understand the methodology from the theoretical level. However, we all know theory does not always translate into practice, so we interviewed members of the Iowa State University TBL Faculty Learning Community to learn how instructors implement TBL concepts in an actual classroom.</p>
+    <p>As suspected, each instructor had a slight variation on how they used TBL. Some followed it by the book others used aspects of it to improve participation in their classroom. Some instructors taught online-only courses, some taught a more traditional face-to-face, while a few had a hybrid classroom that seems to be more common these days where a portion of the students attends the class remotely.</p>
+    <p>In regards to the exercise builder, the two TBL exercise types that we kept hearing were Readiness Assurance Tests and Peer Evaluations. We decided to focus on those at the start of OpenTBL.</p>
+    <p>We also found out that the majority of instructors rarely made changes to their teams. So the ability to create and save variations in their teams was considered unnecessary. With that being the case, we could assume that whatever teams were set would be used for the exercise being created simplifying the building process automatically, or so we thought. More on this later.</p>
+    <p class="spacing__margin-bottom--1">We then mapped out the simplest way to create each exercise type. The steps we started out with were:</p>
+    <ol class="basic-list spacing__margin-bottom--2">
+      <li class="basic-list__item spacing__margin-bottom--1">Details</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Content Editor</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Settings</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Logistics</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Confirmation</li>
+    </ol>
+    <p>Once I started sketching them out, we decided that Settings and Logistics could be merged into a single step since they didn’t contain many inputs on their own. The Exercise Content Editor would be specific to the exercise type the user had chosen. </p>
+    <p class="spacing__margin-bottom--1">To validate our design, we first conducted a focus group test with instructors from the ISU TBL FLC. This helped uncover a couple of problems with our concept:</p>
+    <ul class="basic-list spacing__margin-bottom--2">
+      <li class="basic-list__item spacing__margin-bottom--1">Scoring became a hot topic. There were many variations in methods of scoring individual exercises and how they affected the overall course score for each student. We decided to add basic scoring features for each exercise type and allow instructors to download a spreadsheet with the raw data so they could do more complex calculations in Excel. </li>
+      <li class="basic-list__item spacing__margin-bottom--1">For instructors new to TBL most of the time is spent figuring out the best qualitative questions to ask. They suggested prefilling the inputs with common questions asked by veteran TBL instructors. </li>
+    </ul>
+    <p>After the focus group, we iterated on the designs and prepared for some usability testing. The goal was to make sure instructors could successfully create their TBL exercises using OpenTBL. Participants were a mix of TBL veterans and newbies. </p>
+    <p>The strongest part of the designs included the prefilled templates for peer evaluations. New TBL instructors were out of the builder in less than a minute.</p>
+    <p>The weakest part included the number of clicks it took to add a question to the Readiness Assurance Tests. Instructors with long tests commented on the tediousness of it since RAT questions require the question label, X number of answer choices, and an extra click to mark the correct response. After some digging, we found that most instructors keep their RATs short since the point is to finish in about 10-15 minutes.</p>
+  </div>
+</div>
 
+<section class="grid-wrapper">
+  <div class="col__6--center col-small__10--center">
+    <h2 class="spacing__margin-bottom--0">Final Design</h2>
+    <div class="text--ui text__font-sze--14 text__color--blue spacing__margin-bottom--1">Complexity with little support</div>
+    <p class="spacing__margin-bottom--1">We set out to create a more efficient solution for instructors building TBL exercises. The new, simplified builder was well received. Here are some of the highlights:</p>
+    <ul class="basic-list spacing__margin-bottom--2">
+      <li class="basic-list__item spacing__margin-bottom--1">It reduced the number of steps expediting the creation process so instructors can focus on their classroom</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Literature-based templates ready to use with prefilled qualitative and quantitative sections to help any new TBL instructor out. </li>
+      <li class="basic-list__item spacing__margin-bottom--1">Simplified the team concept </li>
+      <li class="basic-list__item spacing__margin-bottom--1">Most importantly, we saw a decrease in the number of tickets</li>
+    </ul>
+    <p>Support resources were added after the platform was shipped. Every frequently asked question we received regarding the old builder was turned into an article. Now whenever users have a problem, they have a dedicated section to look through first. It also gives us a way to link users to relevant support articles quickly.</p>
+  </div>
+</section>
 
+<section class="grid-wrapper spacing__margin-bottom--4">
+  <div class="col__6--center col-small__10--center">
+    <h2 class="spacing__margin-bottom--0">Post-Launch Challenges</h2>
+    <div class="text--ui text__font-sze--14 text__color--blue spacing__margin-bottom--1">"Just when I thought I was out...they pull me back in"</div>
+    <p>I would be lying if I said we didn’t run into any bumps post-launch. As mentioned above, in an attempt to simplify the builder we automatically tied exercises to the teams created by the instructor on OpenTBL. This makes sense from a UX perspective since instructors don’t usually make changes to teams between exercises and every TBL exercise requires teams. </p>
+    <p>What we overlooked was the complexity that comes with keeping a snapshot of team sets for each exercise once changes to teams are actually made. For example:</p>
+    <p>The instructor adds their teams to OpenTBL, let’s call the set “team set A.” Team set A is used for exercise 1. Then a student has to drop from the class, so a change is made to the teams. Let's call the updated team set “team set B.” Exercise 2 will use team set B, but exercise 1 will need to store a snapshot of team set A. That’s a straightforward scenario but what if the change happens while the exercise is live? What if the instructor creates an exercise before they add their teams?</p>
+    <p>This problem was more challenging on the technical end and our development team - James Fiderlick, Devyn Gasparini, and Dylan Bell - spent long hours solving and testing each scenario.  From a UX perspective, we made sure instructors were aware of what exercises would be affected by the changes they were making to their teams. We also notified them in the builder when they didn’t have any teams created. </p>
+  </div>
+</section>
 
 
 <!-- <div class="grid__container spacing__margin-bottom--2">
