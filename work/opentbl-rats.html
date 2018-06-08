@@ -1,0 +1,118 @@
+---
+layout: default
+title: "Designing Readiness Assurance Tests"
+meta: "A full day workshop to help solve the Raspberry Pi’s upcoming CSS conundrums"
+permalink: /work/opentbl-rats
+---
+
+<div class="grid-wrapper">
+  <div class="col__6--center col-small__10--center">
+    <h1 class="spacing__margin-bottom--0">Designing Readiness Assurance Tests</h1>
+    <div class="text--ui text__font-sze--14 text__color--blue spacing__margin-bottom--1">OpenTBL</div>
+    <hr class="divider--thick divider--gray">
+  </div>
+</div>
+
+<div class="grid-wrapper">
+  <div class="col__6--center col-small__10--center">
+    <p>After adding Peer Evaluations to OpenTBL, a learning platform designed to support the Team-Based Learning (TBL) pedagogy, the next step was to add a second exercise type to the platform.</p>
+
+    <p>Readiness Assurance Tests, or RATs for short, are a set of two multiple-choice tests. The first test, called the iRAT, is taken individually by the student. The second test, the tRAT, are the same questions answered together by the team. The RAT is usually given at the beginning of the class and is primarily used to assess students’ understanding of the material they read through outside of class. This helps instructors know what to focus on during their class activity and what to skip. </p>
+
+    <p>So to start off the project, we collaborated with a couple of TBL instructors to come up with a list of requirements that would make RATs in OpenTBL useful. </p>
+  </div>
+</div>
+
+<div class="meta-container">
+  <div class="meta-container__column">
+    <div class="meta-container__label">Platform</div>
+    <ul class="basic-list--no-dots">
+      <li class="basic-list__item">Web</li>
+    </ul>
+  </div>
+  <div class="meta-container__column">
+    <div class="meta-container__label">Role</div>
+    <ul class="basic-list--no-dots">
+      <li class="basic-list__item">UX Designer</li>
+      <li class="basic-list__item">Front-End(HTML/CSS)</li>
+      <li class="basic-list__item">Branding</li>
+    </ul>
+  </div>
+  <div class="meta-container__column">
+    <div class="meta-container__label">Team</div>
+    <ul class="basic-list--no-dots">
+      <li class="basic-list__item">James Fiderlick</li>
+      <li class="basic-list__item">Devyn Gasparini</li>
+      <li class="basic-list__item">Dylan Bell</li>
+    </ul>
+  </div>
+  <div class="meta-container__column">
+    <a role='button' href="http://www.opentbl.com/" class="btn btn--primary btn--full">Visit Site</a>
+  </div>
+</div>
+
+<div class="grid-wrapper">
+  <div class="col__6--center col-small__10--center">
+    <h2 class="spacing__margin-bottom--0">Requirements</h2>
+    <div class="text--ui text__font-sze--14 text__color--blue spacing__margin-bottom--1">Complexity with little support</div>
+    <p>The primary requirement was to create a Readiness Assurance Test tool that would support both asynchronous and synchronous classrooms. Asynchronous being courses that offer their materials online and allow students to access them at their convenience. Synchronous meaning courses that have a set meeting time either face-to-face, online, or both.</p>
+    <p>The appeal of the RAT is the discussions students have with one another as they go through it. Each student, ideally, brings their unique perspective to the table and the team is made better for that. The RAT on OpenTBL would need to support team member discussion.</p>
+    <p>Another common characteristic of a RAT is allowing multiple tries per question. Since the point of a tRAT is the discussion and not necessarily the score, some instructors allow students to try multiple times, giving teams immediate feedback when the wrong one is submitted. The feedback, theoretically, continues the conversation and encourages students to think harder to avoid having multiple incorrect submissions. In-person this is usually done using scratch-offs.</p>
+    <p>Another common characteristic of a RAT is allowing multiple tries per question. Since the point of a tRAT is the discussion and not necessarily the score, some instructors allow students to try multiple times, giving teams immediate feedback when the wrong one is submitted. The feedback, theoretically, continues the conversation and encourages students to think harder to avoid having multiple incorrect submissions. In-person this is usually done using scratch-offs.</p>
+
+    <p class="spacing__margin-bottom--1">So to recap, the requirements were:</p>
+    <ul class="basic-list">
+      <li class="basic-list__item spacing__margin-bottom--1">Create a Readiness Assurance Test tool that would support both asynchronous and synchronous classrooms.</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Allow students to engage in discussions per question similar to how they would in a face-to-face environment.</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Questions should allow for multiple submission attempts.</li>
+      <li class="basic-list__item spacing__margin-bottom--1">Provide instructors with a real-time progress report of the RAT.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="grid-wrapper spacing__margin-bottom--4">
+  <div class="col__12">
+    <figure>
+      <img src="/assets/images/work/opentbl/otbl__space-home--2.png" alt="Photo of course overview">
+    </figure>
+  </div>
+  <div class="col__6--center col-small__10--center">
+    <div class="caption__container">
+      <div class="caption__label">Fig. 1</div>
+      <div class="caption__description">Landing page for OpenTBL. We wanted a fun and friendly aesthetic to match the application.</div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-wrapper spacing__margin-bottom--4">
+  <div class="col__6--center col-small__10--center">
+    <h2 class="spacing__margin-bottom--0">Design</h2>
+    <div class="text--ui text__font-sze--14 text__color--blue spacing__margin-bottom--1">Complexity with little support</div>
+    <p>The first thing we looked at was the distinction between supporting synchronous versus asynchronous activity on OpenTBL. </p>
+    <p>The most important feature for asynchronous support is archiving content so users can access it whenever they can. On the other hand, synchronous classrooms, especially ones online, can take advantage of real-time interactions. And who’s to say that asynchronous students won’t happen to be on at the same time. So, most of the features will focus on the synchronous use case.</p>
+    <p>Each RAT contains the two tests: the iRAT and the tRAT. The iRAT is a simple multiple choice questionnaire. The tRAT is the same questionnaire with all of the team functionality added to it.</p>
+    <p>For synchronous courses, instructors can set a timer which is displayed at the top letting the team know how much time is left. Under the timer is a list of the team members with their online status is available, so they know who’s available for discussions.  </p>
+    <p>Each question has a discussion section where the team can discuss the question before they submit an answer. The discussion thread is saved so team members who join in later can keep up and participate. The icon changes color and the counter is updated anytime there are new messages in the thread. </p>
+    <p>Multiple answer submissions is an option instructors can select when creating a RAT. When it’s enabled, students will receive immediate feedback next to the answer choice. If the answer is incorrect, the attempts counter is decreased by one. Once they submit the correct answer, the submit button is replaced with a message letting them know they’ve figured it out. </p>
+    <p>While students are completing their RATs, instructors can monitor the results in real-time using the Progress Report. The dashboards display each question label, the breakdown of submissions, average number of attempts or percentage of teams choosing the correct answer, and a list of the most common answer submissions. </p>
+  </div>
+</div>
+
+<div class="grid-wrapper spacing__margin-bottom--4">
+  <div class="col__6">
+    <figure>
+      <img src="/assets/images/work/opentbl/otbl__space-home--2.png" alt="Photo of course overview">
+    </figure>
+  </div>
+  <div class="col__6">
+    <figure>
+      <img src="/assets/images/work/opentbl/otbl__space-home--2.png" alt="Photo of course overview">
+    </figure>
+  </div>
+  <div class="col__6--center col-small__10--center">
+    <div class="caption__container">
+      <div class="caption__label">Fig. 2</div>
+      <div class="caption__description">A common TBL exercise is the RAT. Students take a multiple choice test individually and then complete the same test with their team. The goal is to give questions that create discussion amongst the team, so they learn from each other. OpenTBL provides a real-time chat to facilitate those discussions.</div>
+    </div>
+  </div>
+</div>
